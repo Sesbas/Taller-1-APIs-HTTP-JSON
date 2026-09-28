@@ -51,3 +51,23 @@
 
 ¿Qué diferencia existe entre un error HTTP y un error de JavaScript?
     R//  el error HTTP es un error del servidor que devuelve con un codigo, por otro lado el error de JavaScript es una excepcion que cae dentro del catch
+
+
+18-19. REALIZANDO UN POST - ANALIZAR EL POST
+
+![alt text](image-6.png)
+
+¿Por qué es necesario indicar Content-Type?
+    R// Para decirle al servidor en qué formato va el body
+
+¿Por qué utilizamos JSON.stringify()?
+    R// Porque el body de una petición HTTP viaja como texto, esto convierte un objeto de JavaScript en una cadena JSON
+
+¿Qué ocurriría si enviamos directamente nuevoUsuario?
+    R//  El servidor no recibiria los datos ya que los envia en un formato que no es valido
+
+¿Qué código HTTP devuelve la API?
+    R//  201
+
+¿Qué información devuelve el servidor?
+    R// Muestra por consola la confirmacion de que se creo el usuario con el id:11
