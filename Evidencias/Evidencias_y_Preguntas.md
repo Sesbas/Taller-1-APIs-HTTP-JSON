@@ -34,9 +34,20 @@
 ![alt text](image-2.png)
 
 
-16. CONSULTAR UN USUARIO POR ID
+16-17. CONSULTAR UN USUARIO POR ID - ANALIZANDO response.ok
 
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
 
+¿Qué código HTTP recibe para el ID 1?
+    R// 200
+
+¿Qué sucede con el ID 999?
+    R// Error 404 Not Found
+
+¿Por qué es importante verificar response.ok?
+    R// Porque el fetch no lanza errores, si tuvo una respuesta, continua sin verififcar si la respuesta es buena o mala
+
+¿Qué diferencia existe entre un error HTTP y un error de JavaScript?
+    R//  el error HTTP es un error del servidor que devuelve con un codigo, por otro lado el error de JavaScript es una excepcion que cae dentro del catch
