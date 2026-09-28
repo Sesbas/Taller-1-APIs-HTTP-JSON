@@ -1,25 +1,27 @@
-const url = "https://jsonplaceholder.typicode.com/users";
-const boton = document.getElementById("btnCargar");
-const contenedor = document.getElementById("usuarios");
-boton.addEventListener("click", cargarUsuarios);
-async function cargarUsuarios() {
+const btnBuscar = document.getElementById("btnBuscar");
+btnBuscar.addEventListener("click", buscarUsuario);
+async function buscarUsuario() {
+ const id = document.getElementById("idUsuario").value;
+ const resultado = document.getElementById("resultado");
+ if (!id) {
+ resultado.innerHTML = "<p>Ingrese un ID.</p>";
+ return;
+ }
  try {
- const response = await fetch(url);
- const usuarios = await response.json();
- contenedor.innerHTML = "";
- usuarios.forEach(usuario => {
- const div = document.createElement("div");
- div.innerHTML = `
+ const response = await fetch(
+ `https://jsonplaceholder.typicode.com/users/${id}`
+ );
+ if (!response.ok) {
+ throw new Error(`HTTP ${response.status}`);
+ }
+ const usuario = await response.json();
+ resultado.innerHTML = `
  <h2>${usuario.name}</h2>
- <p><strong>Usuario:</strong> ${usuario.username}</p>
- <p><strong>Email:</strong> ${usuario.email}</p>
- <p><strong>Teléfono:</strong> ${usuario.phone}</p>
+ <p>${usuario.email}</p>
+ <p>${usuario.phone}</p>
  `;
- contenedor.appendChild(div);
- });
  } catch (error) {
- contenedor.innerHTML =
- "<p>Se presentó un error al consultar la API.</p>";
- console.error(error);
+ resultado.innerHTML =
+ `<p>Error: ${error.message}</p>`;
  }
 }
