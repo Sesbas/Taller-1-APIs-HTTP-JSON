@@ -22,3 +22,10 @@
 
 ¿Cuál de las dos formas considera más fácil de leer?
     R// el async/await es mucho mas facil de leer y entender
+
+
+14.Mostrar datos en el HTML
+
+![alt text](image-1.png)
+
+
