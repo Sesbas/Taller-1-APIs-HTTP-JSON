@@ -1,4 +1,4 @@
-11.Primer consuimo de la API
+11. Primer consuimo de la API
 
 ![alt text](image.png)
 
@@ -18,14 +18,19 @@
     R//  Un objeto anidado
 
 
-13.Utilizacion del async/await
+13. Utilizacion del async/await
 
 ¿Cuál de las dos formas considera más fácil de leer?
     R// el async/await es mucho mas facil de leer y entender
 
 
-14.Mostrar datos en el HTML
+14. Mostrar datos en el HTML
 
 ![alt text](image-1.png)
+
+
+15. Mejorar la interfaz
+
+![alt text](image-2.png)
 
 
