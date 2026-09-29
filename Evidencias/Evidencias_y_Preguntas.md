@@ -113,3 +113,55 @@
     R//  Porque la accionj de delete no tiene nada que devolover, ya se realizo la accion y solo devuelve el codigo 200 como confirmacion de la accion 
 
 
+27. GET con cURL
+
+![alt text](image-12.png)
+
+
+28. GET por ID
+
+![alt text](image-13.png)
+
+
+29. MOSTRAR LOS HEADERS
+
+![alt text](image-14.png)
+
+¿Qué información adicional aparece?
+    R//  Content-Type, Content-Length, Date, Cache-Control, entre otros
+
+¿Dónde aparece el código HTTP?
+    R//  En la primer lina 
+
+¿Qué significa Content-Type?
+    R//  Indica el formato del contenido que devuelve el servidor
+
+
+30. POST CON cURL
+
+![alt text](image-15.png)
+
+
+31. PUT con cURL
+
+![alt text](image-16.png)
+
+
+32. DELETE con cURL
+
+![alt text](image-17.png)
+
+
+34. CREAR UN PROYECTO REST
+
+![alt text](image-19.png)
+
+
+35. CONSULTA POR ID
+
+![alt text](image-18.png)
+
+
+36. POST DESDE SOAPUI
+
+![alt text](image-20.png)
