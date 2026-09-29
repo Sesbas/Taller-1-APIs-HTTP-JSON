@@ -1,28 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Usuarios API</title>
- <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cliente Universal de APIs</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
- <h1>Usuarios</h1>
- <button id="btnCargar">
- Cargar usuarios
- </button>
- <div id="usuarios"></div>
-
-  <input type="number" id="idUsuario" placeholder="ID del usuario">
-<button id="btnBuscar">
- Buscar usuario
-</button>
-<div id="resultado"></div>
-
-
- <script src="app.js"></script>
-
-
-
+  <main>
+    <header class="card"><h1>CLIENTE UNIVERSAL DE APIs</h1></header>
+    <section class="card">
+      <div class="fila">
+        <label>Método
+          <select id="metodo">
+            <option>GET</option><option>POST</option><option>PUT</option><option>DELETE</option>
+          </select>
+        </label>
+        <label class="grande">URL
+          <input id="url" type="text" value="">
+        </label>
+      </div>
+      <label>JSON Body
+        <textarea id="body" rows="6" placeholder='{"name":"..."}'></textarea>
+      </label>
+      <button id="ejecutar">EJECUTAR</button>
+    </section>
+    <section class="card">
+      <p id="estado">Status HTTP: —</p>
+      <p id="tiempo">Tiempo de respuesta: —</p>
+      <p id="error" class="error" hidden></p>
+      <h3>RESPUESTA JSON</h3>
+      <pre id="respuesta"></pre>
+    </section>
+  </main>
+  <script src="app.js"></script>
 </body>
-</html>
+</html>s
