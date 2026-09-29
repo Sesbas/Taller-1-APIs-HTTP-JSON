@@ -2,10 +2,19 @@ const $ = id => document.getElementById(id);
 $("ejecutar").addEventListener("click", ejecutarSolicitud);
 
 async function ejecutarSolicitud() {
+  const metodo = $("metodo").value;
   const url = $("url").value.trim();
+  const bodyTexto = $("body").value.trim();
+
+  const opciones = { method: metodo, headers: {} };
+
+  if (metodo === "POST" || metodo === "PUT") {
+    opciones.body = JSON.stringify(JSON.parse(bodyTexto));
+    opciones.headers["Content-Type"] = "application/json";
+  }
 
   const inicio = performance.now();
-  const response = await fetch(url);
+  const response = await fetch(url, opciones);
   const tiempo = performance.now() - inicio;
 
   const resultado = await response.json();

@@ -190,3 +190,6 @@ GET: ![alt text](image-26.png)
 
 GET con status y timepo de respuesta: ![alt text](image-27.png)
 
+POST: ![alt text](image-28.png)
+
+PUT: ![alt text](image-29.png)
