@@ -184,4 +184,9 @@ cURL: una línea en la terminal, ideal para scripts y servidores, con la salida 
 JavaScript: escribes código y tú decides cómo mostrar el resultado.
 
 
+RETO FINAL
+
+GET: ![alt text](image-26.png)
+
+GET con status y timepo de respuesta: ![alt text](image-27.png)
 
