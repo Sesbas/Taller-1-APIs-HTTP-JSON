@@ -193,3 +193,25 @@ GET con status y timepo de respuesta: ![alt text](image-27.png)
 POST: ![alt text](image-28.png)
 
 PUT: ![alt text](image-29.png)
+
+PRUEBAS OBLIGATORIAS
+
+Prueba 1: GET (todos los usuarios):  ![alt text](image-30.png)
+
+Prueba 2: GET por ID: ![alt text](image-31.png)
+
+Prueba 3: POST: ![alt text](image-32.png)
+
+Prueba 4: PUT: ![alt text](image-33.png)
+
+Prueba 5: DELETE: ![alt text](image-34.png)
+
+Prueba 6: Error 404: ![alt text](image-35.png)
+
+Prueba 7: URL inválida: ![alt text](image-36.png)
+
+Prueba 8: JSON inválido: ![alt text](image-37.png)
+
+Prueba 9: Error de conexión: ![alt text](image-38.png)
+
+Prueba 10: POST sin body: ![alt text](image-39.png)
