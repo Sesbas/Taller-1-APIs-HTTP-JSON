@@ -1,25 +1,27 @@
-async function crearUsuario() {
- const nuevoUsuario = {
- name: "Carlos Pérez",
- username: "carlosp",
- email: "carlos@example.com"
- };
+const btnBuscar = document.getElementById("btnBuscar");
+btnBuscar.addEventListener("click", buscarUsuario);
+async function buscarUsuario() {
+ const id = document.getElementById("idUsuario").value;
+ const resultado = document.getElementById("resultado");
+ if (!id) {
+ resultado.innerHTML = "<p>Ingrese un ID.</p>";
+ return;
+ }
  try {
  const response = await fetch(
- "https://jsonplaceholder.typicode.com/users",
- {
- method: "POST",
- headers: {
- "Content-Type": "application/json"
- },
- body: JSON.stringify(nuevoUsuario)
- }
+ `https://jsonplaceholder.typicode.com/users/${id}`
  );
- const data = await response.json();
- console.log("Código HTTP:", response.status);
- console.log("Respuesta:", data);
+ if (!response.ok) {
+ throw new Error(`HTTP ${response.status}`);
+ }
+ const usuario = await response.json();
+ resultado.innerHTML = `
+ <h2>${usuario.name}</h2>
+ <p>${usuario.email}</p>
+ <p>${usuario.phone}</p>
+ `;
  } catch (error) {
- console.error(error);
+ resultado.innerHTML =
+ `<p>Error: ${error.message}</p>`;
  }
 }
-crearUsuario();

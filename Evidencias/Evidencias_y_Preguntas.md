@@ -165,3 +165,23 @@
 36. POST DESDE SOAPUI
 
 ![alt text](image-20.png)
+
+COMPARACION DE HERRAMIENTAS
+
+![alt text](image-21.png)
+
+
+37. ANALISIS DE UNA SOLICITUD HTTP
+
+SOAPUI: ![alt text](image-22.png)
+POSTMAN: ![alt text](image-23.png)
+cURKL: ![alt text](image-24.png)
+JavaScript: ![alt text](image-25.png)
+
+SOAPUI: interfaz gráfica, más orientada a pruebas de servicios.
+POSTMAN: interfaz gráfica, muestra estado, tiempo, tamaño y JSON formateado.
+cURL: una línea en la terminal, ideal para scripts y servidores, con la salida en texto plano.
+JavaScript: escribes código y tú decides cómo mostrar el resultado.
+
+
+
