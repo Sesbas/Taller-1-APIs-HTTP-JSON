@@ -71,3 +71,45 @@
 
 ¿Qué información devuelve el servidor?
     R// Muestra por consola la confirmacion de que se creo el usuario con el id:11
+
+
+21. GET – CONSULTAR TODOS LOS USUARIOS
+
+![alt text](image-7.png)
+
+
+22. GET POR ID
+
+![alt text](image-8.png)
+
+¿Qué diferencia existe entre ambas respuestas?
+    R// Cuando se usa /users se llaman a todos los usuarios y cuando se usa /users/3 se esta llamando un id de usuario especifico
+
+¿Cuál devuelve un arreglo?
+    R// /users
+
+¿Cuál devuelve un objeto?
+    R//  /users/3
+
+¿Cómo cambia la URL?
+    R//  se le agrega un / y el ID o identificador del objeto que queremops llamar
+
+
+23. POST EN POSTMAN
+
+![alt text](image-9.png)
+
+
+24. put
+
+![alt text](image-10.png)
+
+
+25. DELETE
+
+![alt text](image-11.png)
+
+¿Por qué una operación DELETE puede tener una respuesta sin contenido?
+    R//  Porque la accionj de delete no tiene nada que devolover, ya se realizo la accion y solo devuelve el codigo 200 como confirmacion de la accion 
+
+
